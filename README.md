@@ -1,5 +1,13 @@
 # Swagger Code Generator
 
+
+Fork of the Swagger code generator project adding support for the wiremock language.  This is currently an experiment to test its usefulness, if proving useful a PR should be made against Swagger-codegen-cli to feed back upstream.
+
+Files to look at:
+- modules/swagger-codegen/src/main/java/io/swagger/codegen/languages/WireMockConfigCodegen.java
+- modules/swagger-codegen/src/main/resources/META-INF/services/io.swagger.codegen.CodegenConfig
+- modules/swagger-codegen/src/main/resources/wire-mock/wire-mock.mustache
+ 
 - Master (2.4.0): [![Build Status](https://img.shields.io/travis/swagger-api/swagger-codegen/master.svg?label=Petstore%20Integration%20Test)](https://travis-ci.org/swagger-api/swagger-codegen)
 [![Run Status](https://img.shields.io/shippable/5782588a3be4f4faa56c5bea.svg?label=Mustache%20Template%20Test)](https://app.shippable.com/projects/5782588a3be4f4faa56c5bea)
 [![Windows Test](https://ci.appveyor.com/api/projects/status/github/swagger-api/swagger-codegen?branch=master&svg=true&passingText=Windows%20Test%20-%20OK&failingText=Windows%20Test%20-%20Fails)](https://ci.appveyor.com/project/WilliamCheng/swagger-codegen-wh2wu)
