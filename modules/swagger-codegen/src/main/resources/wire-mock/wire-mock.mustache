@@ -1,0 +1,14 @@
+{{#operations}}
+{{#operation}}
+{
+    "request": {
+        "method": "{{httpMethod}}",
+        "url": "{{basePathWithoutHost}}{{path}}"
+    },
+    "response": {
+        "status": {{#responses}}{{response}}{{/responses}},
+        "body": {{#examples}}{{example}}{{/examples}}
+    }
+}
+{{/operation}}
+{{/operations}}
