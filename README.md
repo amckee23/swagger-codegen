@@ -3,10 +3,17 @@
 
 Fork of the Swagger code generator project adding support for the wiremock language.  This is currently an experiment to test its usefulness, if proving useful a PR should be made against Swagger-codegen-cli to feed back upstream.
 
-Files to look at:
+###Files to look at:
 - modules/swagger-codegen/src/main/java/io/swagger/codegen/languages/WireMockConfigCodegen.java
 - modules/swagger-codegen/src/main/resources/META-INF/services/io.swagger.codegen.CodegenConfig
 - modules/swagger-codegen/src/main/resources/wire-mock/wire-mock.mustache
+
+###Prereqs
+- Java 8
+- Maven 3
+###Running WireMock Example:
+- mvn clean package
+- java -jar modules/swagger-codegen-cli/target/swagger-codegen-cli.jar generate -l wire-mock -i [Path to Yaml] -o [Output Directory]
  
 ## Overview
 This is the swagger codegen project, which allows generation of API client libraries (SDK generation), server stubs and documentation automatically given an [OpenAPI Spec](https://github.com/OAI/OpenAPI-Specification). Currently, the following languages/frameworks are supported:
